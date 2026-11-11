@@ -1,0 +1,2520 @@
+{
+ "stand": "2026-10-31T21:00:00+01:00",
+ "status": "turnier",
+ "saison": {
+  "nr": 2,
+  "permalink": null,
+  "start": "2026-10-01T00:00:00+02:00",
+  "anmeldeschluss": "2026-10-30T23:59:00+01:00",
+  "ende": "2026-10-31T23:59:00+01:00",
+  "reveal": {
+   "gruppen": "2026-10-31T14:00:00+01:00",
+   "playoffs": "2026-10-31T18:00:00+01:00",
+   "final": "2026-10-31T20:00:00+01:00"
+  }
+ },
+ "naechste_saison": null,
+ "stadien": [
+  {
+   "stufe": 1,
+   "name": "Backyard Pitch",
+   "voll": 100
+  },
+  {
+   "stufe": 2,
+   "name": "Sports Ground",
+   "voll": 250
+  },
+  {
+   "stufe": 3,
+   "name": "Stadium",
+   "voll": 500
+  },
+  {
+   "stufe": 4,
+   "name": "Arena",
+   "voll": 1000
+  },
+  {
+   "stufe": 5,
+   "name": "Mega Arena",
+   "voll": 2000
+  }
+ ],
+ "level": [
+  {
+   "ab": 0,
+   "level": 0
+  },
+  {
+   "ab": 2,
+   "level": 1
+  },
+  {
+   "ab": 5,
+   "level": 2
+  },
+  {
+   "ab": 10,
+   "level": 3
+  },
+  {
+   "ab": 20,
+   "level": 4
+  },
+  {
+   "ab": 30,
+   "level": 5
+  },
+  {
+   "ab": 45,
+   "level": 6
+  },
+  {
+   "ab": 60,
+   "level": 7
+  },
+  {
+   "ab": 80,
+   "level": 8
+  },
+  {
+   "ab": 100,
+   "level": 9
+  },
+  {
+   "ab": 125,
+   "level": 10
+  },
+  {
+   "ab": 150,
+   "level": 11
+  },
+  {
+   "ab": 180,
+   "level": 12
+  },
+  {
+   "ab": 210,
+   "level": 13
+  },
+  {
+   "ab": 245,
+   "level": 14
+  },
+  {
+   "ab": 280,
+   "level": 15
+  },
+  {
+   "ab": 320,
+   "level": 16
+  },
+  {
+   "ab": 360,
+   "level": 17
+  },
+  {
+   "ab": 405,
+   "level": 18
+  },
+  {
+   "ab": 450,
+   "level": 19
+  },
+  {
+   "ab": 500,
+   "level": 20
+  }
+ ],
+ "bonus_pro_stufe": 1,
+ "teams": [
+  {
+   "id": "1110",
+   "name": "Kick Collective",
+   "gruender": "demo-user-051",
+   "erstellt": "2026-09-03T16:00:00+0000",
+   "fans": 261,
+   "fans_anonym": 261,
+   "fans_benannt": [],
+   "stufe": 3,
+   "stadion": "Stadium",
+   "kapazitaet": 500,
+   "stammelf": 11,
+   "komplett": true,
+   "staerke": 153,
+   "likes_total": 1918,
+   "bonus": 3,
+   "behalten": 1,
+   "slots": [
+    {
+     "slot": "GK",
+     "pos": "GK",
+     "stamm": {
+      "user": "demo-user-057",
+      "likes": 101,
+      "level": 9,
+      "punkte": 12
+     },
+     "aw": {
+      "user": "demo-user-064",
+      "likes": 11,
+      "level": 3,
+      "punkte": 6
+     },
+     "spielt": "stamm"
+    },
+    {
+     "slot": "LB",
+     "pos": "LB",
+     "stamm": {
+      "user": "demo-user-053",
+      "likes": 171,
+      "level": 11,
+      "punkte": 14
+     },
+     "aw": {
+      "user": "demo-user-062",
+      "likes": 190,
+      "level": 12,
+      "punkte": 15
+     },
+     "spielt": "aw"
+    },
+    {
+     "slot": "CB1",
+     "pos": "CB",
+     "stamm": {
+      "user": "demo-user-055",
+      "likes": 88,
+      "level": 8,
+      "punkte": 11
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CB2",
+     "pos": "CB",
+     "stamm": {
+      "user": "demo-user-061",
+      "likes": 82,
+      "level": 8,
+      "punkte": 11
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "RB",
+     "pos": "RB",
+     "stamm": {
+      "user": "demo-user-052",
+      "likes": 313,
+      "level": 15,
+      "punkte": 18
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CM1",
+     "pos": "CM",
+     "stamm": {
+      "user": "demo-user-056",
+      "likes": 213,
+      "level": 13,
+      "punkte": 16
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CM2",
+     "pos": "CM",
+     "stamm": {
+      "user": "demo-user-058",
+      "likes": 125,
+      "level": 10,
+      "punkte": 13
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CM3",
+     "pos": "CM",
+     "stamm": {
+      "user": "demo-user-060",
+      "likes": 153,
+      "level": 11,
+      "punkte": 14
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "LW",
+     "pos": "LW",
+     "stamm": {
+      "user": "demo-user-051",
+      "likes": 70,
+      "level": 7,
+      "punkte": 10
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "ST",
+     "pos": "ST",
+     "stamm": {
+      "user": "demo-user-054",
+      "likes": 506,
+      "level": 20,
+      "punkte": 23
+     },
+     "aw": {
+      "user": "demo-user-063",
+      "likes": 11,
+      "level": 3,
+      "punkte": 6
+     },
+     "spielt": "stamm"
+    },
+    {
+     "slot": "RW",
+     "pos": "RW",
+     "stamm": {
+      "user": "demo-user-059",
+      "likes": 77,
+      "level": 7,
+      "punkte": 10
+     },
+     "aw": null,
+     "spielt": "stamm"
+    }
+   ]
+  },
+  {
+   "id": "1144",
+   "name": "Rhine Wave",
+   "gruender": "demo-user-066",
+   "erstellt": "2026-09-04T22:00:00+0000",
+   "fans": 413,
+   "fans_anonym": 378,
+   "fans_benannt": [
+    "demo-user-081",
+    "demo-user-082",
+    "demo-user-083",
+    "demo-user-084",
+    "demo-user-085",
+    "demo-user-086",
+    "demo-user-087",
+    "demo-user-088",
+    "demo-user-089",
+    "demo-user-090",
+    "demo-user-091",
+    "demo-user-092",
+    "demo-user-093",
+    "demo-user-094",
+    "demo-user-095",
+    "demo-user-096",
+    "demo-user-097",
+    "demo-user-098",
+    "demo-user-099",
+    "demo-user-100",
+    "demo-user-101",
+    "demo-user-102",
+    "demo-user-103",
+    "demo-user-104",
+    "demo-user-105",
+    "demo-user-106",
+    "demo-user-107",
+    "demo-user-108",
+    "demo-user-109",
+    "demo-user-110",
+    "demo-user-111",
+    "demo-user-112",
+    "demo-user-113",
+    "demo-user-114",
+    "demo-user-115"
+   ],
+   "stufe": 3,
+   "stadion": "Stadium",
+   "kapazitaet": 500,
+   "stammelf": 11,
+   "komplett": true,
+   "staerke": 133,
+   "likes_total": 1513,
+   "bonus": 3,
+   "behalten": 1,
+   "slots": [
+    {
+     "slot": "GK",
+     "pos": "GK",
+     "stamm": {
+      "user": "demo-user-068",
+      "likes": 142,
+      "level": 10,
+      "punkte": 13
+     },
+     "aw": {
+      "user": "demo-user-079",
+      "likes": 102,
+      "level": 9,
+      "punkte": 12
+     },
+     "spielt": "stamm"
+    },
+    {
+     "slot": "LB",
+     "pos": "LB",
+     "stamm": {
+      "user": "demo-user-075",
+      "likes": 89,
+      "level": 8,
+      "punkte": 11
+     },
+     "aw": {
+      "user": "demo-user-080",
+      "likes": 90,
+      "level": 8,
+      "punkte": 11
+     },
+     "spielt": "aw"
+    },
+    {
+     "slot": "CB1",
+     "pos": "CB",
+     "stamm": {
+      "user": "demo-user-066",
+      "likes": 121,
+      "level": 9,
+      "punkte": 12
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CB2",
+     "pos": "CB",
+     "stamm": {
+      "user": "demo-user-073",
+      "likes": 470,
+      "level": 19,
+      "punkte": 22
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "RB",
+     "pos": "RB",
+     "stamm": {
+      "user": "demo-user-069",
+      "likes": 275,
+      "level": 14,
+      "punkte": 17
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CM1",
+     "pos": "CM",
+     "stamm": {
+      "user": "demo-user-067",
+      "likes": 67,
+      "level": 7,
+      "punkte": 10
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CM2",
+     "pos": "CM",
+     "stamm": {
+      "user": "demo-user-072",
+      "likes": 34,
+      "level": 5,
+      "punkte": 8
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CM3",
+     "pos": "CM",
+     "stamm": {
+      "user": "demo-user-074",
+      "likes": 38,
+      "level": 5,
+      "punkte": 8
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "LW",
+     "pos": "LW",
+     "stamm": {
+      "user": "demo-user-070",
+      "likes": 121,
+      "level": 9,
+      "punkte": 12
+     },
+     "aw": {
+      "user": "demo-user-078",
+      "likes": 15,
+      "level": 3,
+      "punkte": 6
+     },
+     "spielt": "stamm"
+    },
+    {
+     "slot": "ST",
+     "pos": "ST",
+     "stamm": {
+      "user": "demo-user-076",
+      "likes": 32,
+      "level": 5,
+      "punkte": 8
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "RW",
+     "pos": "RW",
+     "stamm": {
+      "user": "demo-user-071",
+      "likes": 63,
+      "level": 7,
+      "punkte": 10
+     },
+     "aw": {
+      "user": "demo-user-077",
+      "likes": 123,
+      "level": 9,
+      "punkte": 12
+     },
+     "spielt": "aw"
+    }
+   ]
+  },
+  {
+   "id": "1078",
+   "name": "Alpine Eagles",
+   "gruender": "demo-user-037",
+   "erstellt": "2026-09-02T10:00:00+0000",
+   "fans": 376,
+   "fans_anonym": 375,
+   "fans_benannt": [
+    "demo-user-050"
+   ],
+   "stufe": 3,
+   "stadion": "Stadium",
+   "kapazitaet": 500,
+   "stammelf": 11,
+   "komplett": true,
+   "staerke": 123,
+   "likes_total": 1113,
+   "bonus": 3,
+   "behalten": 1,
+   "slots": [
+    {
+     "slot": "GK",
+     "pos": "GK",
+     "stamm": {
+      "user": "demo-user-043",
+      "likes": 146,
+      "level": 10,
+      "punkte": 13
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "LB",
+     "pos": "LB",
+     "stamm": {
+      "user": "demo-user-042",
+      "likes": 143,
+      "level": 10,
+      "punkte": 13
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CB1",
+     "pos": "CB",
+     "stamm": {
+      "user": "demo-user-040",
+      "likes": 128,
+      "level": 10,
+      "punkte": 13
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CB2",
+     "pos": "CB",
+     "stamm": {
+      "user": "demo-user-047",
+      "likes": 23,
+      "level": 4,
+      "punkte": 7
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "RB",
+     "pos": "RB",
+     "stamm": {
+      "user": "demo-user-039",
+      "likes": 88,
+      "level": 8,
+      "punkte": 11
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CM1",
+     "pos": "CM",
+     "stamm": {
+      "user": "demo-user-038",
+      "likes": 98,
+      "level": 8,
+      "punkte": 11
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CM2",
+     "pos": "CM",
+     "stamm": {
+      "user": "demo-user-044",
+      "likes": 218,
+      "level": 13,
+      "punkte": 16
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CM3",
+     "pos": "CM",
+     "stamm": {
+      "user": "demo-user-046",
+      "likes": 85,
+      "level": 8,
+      "punkte": 11
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "LW",
+     "pos": "LW",
+     "stamm": {
+      "user": "demo-user-037",
+      "likes": 41,
+      "level": 5,
+      "punkte": 8
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "ST",
+     "pos": "ST",
+     "stamm": {
+      "user": "demo-user-041",
+      "likes": 41,
+      "level": 5,
+      "punkte": 8
+     },
+     "aw": {
+      "user": "demo-user-049",
+      "likes": 15,
+      "level": 3,
+      "punkte": 6
+     },
+     "spielt": "stamm"
+    },
+    {
+     "slot": "RW",
+     "pos": "RW",
+     "stamm": {
+      "user": "demo-user-045",
+      "likes": 102,
+      "level": 9,
+      "punkte": 12
+     },
+     "aw": {
+      "user": "demo-user-048",
+      "likes": 7,
+      "level": 2,
+      "punkte": 5
+     },
+     "spielt": "stamm"
+    }
+   ]
+  },
+  {
+   "id": "1392",
+   "name": "Fog Crows",
+   "gruender": "demo-user-184",
+   "erstellt": "2026-10-01T04:00:00+0000",
+   "fans": 113,
+   "fans_anonym": 81,
+   "fans_benannt": [
+    "demo-user-198",
+    "demo-user-199",
+    "demo-user-200",
+    "demo-user-201",
+    "demo-user-202",
+    "demo-user-203",
+    "demo-user-204",
+    "demo-user-205",
+    "demo-user-206",
+    "demo-user-207",
+    "demo-user-208",
+    "demo-user-209",
+    "demo-user-210",
+    "demo-user-211",
+    "demo-user-212",
+    "demo-user-213",
+    "demo-user-214",
+    "demo-user-215",
+    "demo-user-216",
+    "demo-user-217",
+    "demo-user-218",
+    "demo-user-219",
+    "demo-user-220",
+    "demo-user-221",
+    "demo-user-222",
+    "demo-user-223",
+    "demo-user-224",
+    "demo-user-225",
+    "demo-user-226",
+    "demo-user-227",
+    "demo-user-228",
+    "demo-user-229"
+   ],
+   "stufe": 2,
+   "stadion": "Sports Ground",
+   "kapazitaet": 250,
+   "stammelf": 11,
+   "komplett": true,
+   "staerke": 107,
+   "likes_total": 1677,
+   "bonus": 2,
+   "behalten": 0,
+   "slots": [
+    {
+     "slot": "GK",
+     "pos": "GK",
+     "stamm": {
+      "user": "demo-user-187",
+      "likes": 29,
+      "level": 4,
+      "punkte": 6
+     },
+     "aw": {
+      "user": "demo-user-196",
+      "likes": 119,
+      "level": 9,
+      "punkte": 11
+     },
+     "spielt": "aw"
+    },
+    {
+     "slot": "LB",
+     "pos": "LB",
+     "stamm": {
+      "user": "demo-user-191",
+      "likes": 16,
+      "level": 3,
+      "punkte": 5
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CB1",
+     "pos": "CB",
+     "stamm": {
+      "user": "demo-user-185",
+      "likes": 93,
+      "level": 8,
+      "punkte": 10
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CB2",
+     "pos": "CB",
+     "stamm": {
+      "user": "demo-user-190",
+      "likes": 17,
+      "level": 3,
+      "punkte": 5
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "RB",
+     "pos": "RB",
+     "stamm": {
+      "user": "demo-user-188",
+      "likes": 38,
+      "level": 5,
+      "punkte": 7
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CM1",
+     "pos": "CM",
+     "stamm": {
+      "user": "demo-user-184",
+      "likes": 225,
+      "level": 13,
+      "punkte": 15
+     },
+     "aw": {
+      "user": "demo-user-194",
+      "likes": 31,
+      "level": 5,
+      "punkte": 7
+     },
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CM2",
+     "pos": "CM",
+     "stamm": {
+      "user": "demo-user-186",
+      "likes": 57,
+      "level": 6,
+      "punkte": 8
+     },
+     "aw": {
+      "user": "demo-user-197",
+      "likes": 25,
+      "level": 4,
+      "punkte": 6
+     },
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CM3",
+     "pos": "CM",
+     "stamm": {
+      "user": "demo-user-230",
+      "likes": 0,
+      "level": 0,
+      "punkte": 2
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "LW",
+     "pos": "LW",
+     "stamm": {
+      "user": "demo-user-189",
+      "likes": 87,
+      "level": 8,
+      "punkte": 10
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "ST",
+     "pos": "ST",
+     "stamm": {
+      "user": "demo-user-193",
+      "likes": 30,
+      "level": 5,
+      "punkte": 7
+     },
+     "aw": {
+      "user": "demo-user-195",
+      "likes": 125,
+      "level": 10,
+      "punkte": 12
+     },
+     "spielt": "aw"
+    },
+    {
+     "slot": "RW",
+     "pos": "RW",
+     "stamm": {
+      "user": "demo-user-192",
+      "likes": 900,
+      "level": 20,
+      "punkte": 22
+     },
+     "aw": null,
+     "spielt": "stamm"
+    }
+   ]
+  },
+  {
+   "id": "1480",
+   "name": "Lightning United",
+   "gruender": "demo-user-231",
+   "erstellt": "2026-10-02T10:00:00+0000",
+   "fans": 205,
+   "fans_anonym": 190,
+   "fans_benannt": [
+    "demo-user-247",
+    "demo-user-248",
+    "demo-user-249",
+    "demo-user-250",
+    "demo-user-251",
+    "demo-user-252",
+    "demo-user-253",
+    "demo-user-254",
+    "demo-user-255",
+    "demo-user-256",
+    "demo-user-257",
+    "demo-user-258",
+    "demo-user-259",
+    "demo-user-260",
+    "demo-user-261"
+   ],
+   "stufe": 2,
+   "stadion": "Sports Ground",
+   "kapazitaet": 250,
+   "stammelf": 11,
+   "komplett": true,
+   "staerke": 112,
+   "likes_total": 1360,
+   "bonus": 2,
+   "behalten": 0,
+   "slots": [
+    {
+     "slot": "GK",
+     "pos": "GK",
+     "stamm": {
+      "user": "demo-user-234",
+      "likes": 50,
+      "level": 6,
+      "punkte": 8
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "LB",
+     "pos": "LB",
+     "stamm": {
+      "user": "demo-user-236",
+      "likes": 203,
+      "level": 12,
+      "punkte": 14
+     },
+     "aw": {
+      "user": "demo-user-242",
+      "likes": 54,
+      "level": 6,
+      "punkte": 8
+     },
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CB1",
+     "pos": "CB",
+     "stamm": {
+      "user": "demo-user-233",
+      "likes": 127,
+      "level": 10,
+      "punkte": 12
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CB2",
+     "pos": "CB",
+     "stamm": {
+      "user": "demo-user-237",
+      "likes": 48,
+      "level": 6,
+      "punkte": 8
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "RB",
+     "pos": "RB",
+     "stamm": {
+      "user": "demo-user-238",
+      "likes": 28,
+      "level": 4,
+      "punkte": 6
+     },
+     "aw": {
+      "user": "demo-user-243",
+      "likes": 16,
+      "level": 3,
+      "punkte": 5
+     },
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CM1",
+     "pos": "CM",
+     "stamm": {
+      "user": "demo-user-239",
+      "likes": 584,
+      "level": 20,
+      "punkte": 22
+     },
+     "aw": {
+      "user": "demo-user-246",
+      "likes": 46,
+      "level": 6,
+      "punkte": 8
+     },
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CM2",
+     "pos": "CM",
+     "stamm": {
+      "user": "demo-user-240",
+      "likes": 56,
+      "level": 6,
+      "punkte": 8
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CM3",
+     "pos": "CM",
+     "stamm": {
+      "user": "demo-user-241",
+      "likes": 32,
+      "level": 5,
+      "punkte": 7
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "LW",
+     "pos": "LW",
+     "stamm": {
+      "user": "demo-user-232",
+      "likes": 53,
+      "level": 6,
+      "punkte": 8
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "ST",
+     "pos": "ST",
+     "stamm": {
+      "user": "demo-user-235",
+      "likes": 26,
+      "level": 4,
+      "punkte": 6
+     },
+     "aw": {
+      "user": "demo-user-244",
+      "likes": 22,
+      "level": 4,
+      "punkte": 6
+     },
+     "spielt": "stamm"
+    },
+    {
+     "slot": "RW",
+     "pos": "RW",
+     "stamm": {
+      "user": "demo-user-231",
+      "likes": 153,
+      "level": 11,
+      "punkte": 13
+     },
+     "aw": {
+      "user": "demo-user-245",
+      "likes": 5,
+      "level": 2,
+      "punkte": 4
+     },
+     "spielt": "stamm"
+    }
+   ]
+  },
+  {
+   "id": "1552",
+   "name": "Lake Devils",
+   "gruender": "demo-user-263",
+   "erstellt": "2026-10-03T16:00:00+0000",
+   "fans": 307,
+   "fans_anonym": 286,
+   "fans_benannt": [
+    "demo-user-277",
+    "demo-user-278",
+    "demo-user-279",
+    "demo-user-280",
+    "demo-user-281",
+    "demo-user-282",
+    "demo-user-283",
+    "demo-user-284",
+    "demo-user-285",
+    "demo-user-286",
+    "demo-user-287",
+    "demo-user-288",
+    "demo-user-289",
+    "demo-user-290",
+    "demo-user-291",
+    "demo-user-292",
+    "demo-user-293",
+    "demo-user-294",
+    "demo-user-295",
+    "demo-user-296",
+    "demo-user-297"
+   ],
+   "stufe": 3,
+   "stadion": "Stadium",
+   "kapazitaet": 500,
+   "stammelf": 11,
+   "komplett": true,
+   "staerke": 125,
+   "likes_total": 1375,
+   "bonus": 3,
+   "behalten": 0,
+   "slots": [
+    {
+     "slot": "GK",
+     "pos": "GK",
+     "stamm": {
+      "user": "demo-user-271",
+      "likes": 144,
+      "level": 10,
+      "punkte": 13
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "LB",
+     "pos": "LB",
+     "stamm": {
+      "user": "demo-user-266",
+      "likes": 12,
+      "level": 3,
+      "punkte": 6
+     },
+     "aw": {
+      "user": "demo-user-275",
+      "likes": 20,
+      "level": 4,
+      "punkte": 7
+     },
+     "spielt": "aw"
+    },
+    {
+     "slot": "CB1",
+     "pos": "CB",
+     "stamm": {
+      "user": "demo-user-270",
+      "likes": 20,
+      "level": 4,
+      "punkte": 7
+     },
+     "aw": {
+      "user": "demo-user-274",
+      "likes": 115,
+      "level": 9,
+      "punkte": 12
+     },
+     "spielt": "aw"
+    },
+    {
+     "slot": "CB2",
+     "pos": "CB",
+     "stamm": {
+      "user": "demo-user-272",
+      "likes": 79,
+      "level": 7,
+      "punkte": 10
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "RB",
+     "pos": "RB",
+     "stamm": {
+      "user": "demo-user-263",
+      "likes": 6,
+      "level": 2,
+      "punkte": 5
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CM1",
+     "pos": "CM",
+     "stamm": {
+      "user": "demo-user-268",
+      "likes": 81,
+      "level": 8,
+      "punkte": 11
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CM2",
+     "pos": "CM",
+     "stamm": {
+      "user": "demo-user-269",
+      "likes": 255,
+      "level": 14,
+      "punkte": 17
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CM3",
+     "pos": "CM",
+     "stamm": {
+      "user": "demo-user-273",
+      "likes": 131,
+      "level": 10,
+      "punkte": 13
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "LW",
+     "pos": "LW",
+     "stamm": {
+      "user": "demo-user-267",
+      "likes": 33,
+      "level": 5,
+      "punkte": 8
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "ST",
+     "pos": "ST",
+     "stamm": {
+      "user": "demo-user-264",
+      "likes": 23,
+      "level": 4,
+      "punkte": 7
+     },
+     "aw": {
+      "user": "demo-user-276",
+      "likes": 8,
+      "level": 2,
+      "punkte": 5
+     },
+     "spielt": "stamm"
+    },
+    {
+     "slot": "RW",
+     "pos": "RW",
+     "stamm": {
+      "user": "demo-user-265",
+      "likes": 488,
+      "level": 19,
+      "punkte": 22
+     },
+     "aw": null,
+     "spielt": "stamm"
+    }
+   ]
+  },
+  {
+   "id": "1628",
+   "name": "Heartbeat FC",
+   "gruender": "demo-user-299",
+   "erstellt": "2026-10-04T22:00:00+0000",
+   "fans": 240,
+   "fans_anonym": 212,
+   "fans_benannt": [
+    "demo-user-311",
+    "demo-user-312",
+    "demo-user-313",
+    "demo-user-314",
+    "demo-user-315",
+    "demo-user-316",
+    "demo-user-317",
+    "demo-user-318",
+    "demo-user-319",
+    "demo-user-320",
+    "demo-user-321",
+    "demo-user-322",
+    "demo-user-323",
+    "demo-user-324",
+    "demo-user-325",
+    "demo-user-326",
+    "demo-user-327",
+    "demo-user-328",
+    "demo-user-329",
+    "demo-user-330",
+    "demo-user-331",
+    "demo-user-332",
+    "demo-user-333",
+    "demo-user-334",
+    "demo-user-335",
+    "demo-user-336",
+    "demo-user-337",
+    "demo-user-338"
+   ],
+   "stufe": 2,
+   "stadion": "Sports Ground",
+   "kapazitaet": 250,
+   "stammelf": 11,
+   "komplett": true,
+   "staerke": 83,
+   "likes_total": 743,
+   "bonus": 2,
+   "behalten": 0,
+   "slots": [
+    {
+     "slot": "GK",
+     "pos": "GK",
+     "stamm": {
+      "user": "demo-user-301",
+      "likes": 13,
+      "level": 3,
+      "punkte": 5
+     },
+     "aw": {
+      "user": "demo-user-310",
+      "likes": 37,
+      "level": 5,
+      "punkte": 7
+     },
+     "spielt": "aw"
+    },
+    {
+     "slot": "LB",
+     "pos": "LB",
+     "stamm": {
+      "user": "demo-user-306",
+      "likes": 26,
+      "level": 4,
+      "punkte": 6
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CB1",
+     "pos": "CB",
+     "stamm": {
+      "user": "demo-user-303",
+      "likes": 456,
+      "level": 19,
+      "punkte": 21
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CB2",
+     "pos": "CB",
+     "stamm": {
+      "user": "demo-user-305",
+      "likes": 26,
+      "level": 4,
+      "punkte": 6
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "RB",
+     "pos": "RB",
+     "stamm": {
+      "user": "demo-user-299",
+      "likes": 57,
+      "level": 6,
+      "punkte": 8
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CM1",
+     "pos": "CM",
+     "stamm": {
+      "user": "demo-user-300",
+      "likes": 30,
+      "level": 5,
+      "punkte": 7
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CM2",
+     "pos": "CM",
+     "stamm": {
+      "user": "demo-user-308",
+      "likes": 3,
+      "level": 1,
+      "punkte": 3
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CM3",
+     "pos": "CM",
+     "stamm": {
+      "user": "demo-user-309",
+      "likes": 46,
+      "level": 6,
+      "punkte": 8
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "LW",
+     "pos": "LW",
+     "stamm": {
+      "user": "demo-user-302",
+      "likes": 16,
+      "level": 3,
+      "punkte": 5
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "ST",
+     "pos": "ST",
+     "stamm": {
+      "user": "demo-user-307",
+      "likes": 26,
+      "level": 4,
+      "punkte": 6
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "RW",
+     "pos": "RW",
+     "stamm": {
+      "user": "demo-user-304",
+      "likes": 20,
+      "level": 4,
+      "punkte": 6
+     },
+     "aw": null,
+     "spielt": "stamm"
+    }
+   ]
+  },
+  {
+   "id": "1709",
+   "name": "Icebreakers",
+   "gruender": "demo-user-340",
+   "erstellt": "2026-10-06T04:00:00+0000",
+   "fans": 102,
+   "fans_anonym": 77,
+   "fans_benannt": [
+    "demo-user-357",
+    "demo-user-358",
+    "demo-user-359",
+    "demo-user-360",
+    "demo-user-361",
+    "demo-user-362",
+    "demo-user-363",
+    "demo-user-364",
+    "demo-user-365",
+    "demo-user-366",
+    "demo-user-367",
+    "demo-user-368",
+    "demo-user-369",
+    "demo-user-370",
+    "demo-user-371",
+    "demo-user-372",
+    "demo-user-373",
+    "demo-user-374",
+    "demo-user-375",
+    "demo-user-376",
+    "demo-user-377",
+    "demo-user-378",
+    "demo-user-379",
+    "demo-user-380",
+    "demo-user-381"
+   ],
+   "stufe": 2,
+   "stadion": "Sports Ground",
+   "kapazitaet": 250,
+   "stammelf": 11,
+   "komplett": true,
+   "staerke": 125,
+   "likes_total": 1568,
+   "bonus": 2,
+   "behalten": 0,
+   "slots": [
+    {
+     "slot": "GK",
+     "pos": "GK",
+     "stamm": {
+      "user": "demo-user-349",
+      "likes": 84,
+      "level": 8,
+      "punkte": 10
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "LB",
+     "pos": "LB",
+     "stamm": {
+      "user": "demo-user-340",
+      "likes": 85,
+      "level": 8,
+      "punkte": 10
+     },
+     "aw": {
+      "user": "demo-user-351",
+      "likes": 11,
+      "level": 3,
+      "punkte": 5
+     },
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CB1",
+     "pos": "CB",
+     "stamm": {
+      "user": "demo-user-341",
+      "likes": 21,
+      "level": 4,
+      "punkte": 6
+     },
+     "aw": {
+      "user": "demo-user-354",
+      "likes": 86,
+      "level": 8,
+      "punkte": 10
+     },
+     "spielt": "aw"
+    },
+    {
+     "slot": "CB2",
+     "pos": "CB",
+     "stamm": {
+      "user": "demo-user-350",
+      "likes": 21,
+      "level": 4,
+      "punkte": 6
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "RB",
+     "pos": "RB",
+     "stamm": {
+      "user": "demo-user-342",
+      "likes": 41,
+      "level": 5,
+      "punkte": 7
+     },
+     "aw": {
+      "user": "demo-user-355",
+      "likes": 368,
+      "level": 17,
+      "punkte": 19
+     },
+     "spielt": "aw"
+    },
+    {
+     "slot": "CM1",
+     "pos": "CM",
+     "stamm": {
+      "user": "demo-user-343",
+      "likes": 77,
+      "level": 7,
+      "punkte": 9
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CM2",
+     "pos": "CM",
+     "stamm": {
+      "user": "demo-user-344",
+      "likes": 184,
+      "level": 12,
+      "punkte": 14
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CM3",
+     "pos": "CM",
+     "stamm": {
+      "user": "demo-user-348",
+      "likes": 6,
+      "level": 2,
+      "punkte": 4
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "LW",
+     "pos": "LW",
+     "stamm": {
+      "user": "demo-user-347",
+      "likes": 64,
+      "level": 7,
+      "punkte": 9
+     },
+     "aw": {
+      "user": "demo-user-352",
+      "likes": 4,
+      "level": 1,
+      "punkte": 3
+     },
+     "spielt": "stamm"
+    },
+    {
+     "slot": "ST",
+     "pos": "ST",
+     "stamm": {
+      "user": "demo-user-345",
+      "likes": 10,
+      "level": 3,
+      "punkte": 5
+     },
+     "aw": {
+      "user": "demo-user-353",
+      "likes": 280,
+      "level": 15,
+      "punkte": 17
+     },
+     "spielt": "aw"
+    },
+    {
+     "slot": "RW",
+     "pos": "RW",
+     "stamm": {
+      "user": "demo-user-346",
+      "likes": 89,
+      "level": 8,
+      "punkte": 10
+     },
+     "aw": {
+      "user": "demo-user-356",
+      "likes": 313,
+      "level": 15,
+      "punkte": 17
+     },
+     "spielt": "aw"
+    }
+   ]
+  },
+  {
+   "id": "1792",
+   "name": "Matterhorn Lions",
+   "gruender": "demo-user-382",
+   "erstellt": "2026-10-07T10:00:00+0000",
+   "fans": 163,
+   "fans_anonym": 140,
+   "fans_benannt": [
+    "demo-user-397",
+    "demo-user-398",
+    "demo-user-399",
+    "demo-user-400",
+    "demo-user-401",
+    "demo-user-402",
+    "demo-user-403",
+    "demo-user-404",
+    "demo-user-405",
+    "demo-user-406",
+    "demo-user-407",
+    "demo-user-408",
+    "demo-user-409",
+    "demo-user-410",
+    "demo-user-411",
+    "demo-user-412",
+    "demo-user-413",
+    "demo-user-414",
+    "demo-user-415",
+    "demo-user-416",
+    "demo-user-417",
+    "demo-user-418",
+    "demo-user-419"
+   ],
+   "stufe": 2,
+   "stadion": "Sports Ground",
+   "kapazitaet": 250,
+   "stammelf": 11,
+   "komplett": true,
+   "staerke": 100,
+   "likes_total": 1190,
+   "bonus": 2,
+   "behalten": 0,
+   "slots": [
+    {
+     "slot": "GK",
+     "pos": "GK",
+     "stamm": {
+      "user": "demo-user-392",
+      "likes": 45,
+      "level": 6,
+      "punkte": 8
+     },
+     "aw": {
+      "user": "demo-user-394",
+      "likes": 19,
+      "level": 3,
+      "punkte": 5
+     },
+     "spielt": "stamm"
+    },
+    {
+     "slot": "LB",
+     "pos": "LB",
+     "stamm": {
+      "user": "demo-user-388",
+      "likes": 5,
+      "level": 2,
+      "punkte": 4
+     },
+     "aw": {
+      "user": "demo-user-393",
+      "likes": 50,
+      "level": 6,
+      "punkte": 8
+     },
+     "spielt": "aw"
+    },
+    {
+     "slot": "CB1",
+     "pos": "CB",
+     "stamm": {
+      "user": "demo-user-386",
+      "likes": 187,
+      "level": 12,
+      "punkte": 14
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CB2",
+     "pos": "CB",
+     "stamm": {
+      "user": "demo-user-387",
+      "likes": 527,
+      "level": 20,
+      "punkte": 22
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "RB",
+     "pos": "RB",
+     "stamm": {
+      "user": "demo-user-382",
+      "likes": 13,
+      "level": 3,
+      "punkte": 5
+     },
+     "aw": {
+      "user": "demo-user-396",
+      "likes": 10,
+      "level": 3,
+      "punkte": 5
+     },
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CM1",
+     "pos": "CM",
+     "stamm": {
+      "user": "demo-user-383",
+      "likes": 50,
+      "level": 6,
+      "punkte": 8
+     },
+     "aw": {
+      "user": "demo-user-390",
+      "likes": 13,
+      "level": 3,
+      "punkte": 5
+     },
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CM2",
+     "pos": "CM",
+     "stamm": {
+      "user": "demo-user-385",
+      "likes": 9,
+      "level": 2,
+      "punkte": 4
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CM3",
+     "pos": "CM",
+     "stamm": {
+      "user": "demo-user-420",
+      "likes": 0,
+      "level": 0,
+      "punkte": 2
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "LW",
+     "pos": "LW",
+     "stamm": {
+      "user": "demo-user-389",
+      "likes": 174,
+      "level": 11,
+      "punkte": 13
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "ST",
+     "pos": "ST",
+     "stamm": {
+      "user": "demo-user-391",
+      "likes": 4,
+      "level": 1,
+      "punkte": 3
+     },
+     "aw": {
+      "user": "demo-user-395",
+      "likes": 121,
+      "level": 9,
+      "punkte": 11
+     },
+     "spielt": "aw"
+    },
+    {
+     "slot": "RW",
+     "pos": "RW",
+     "stamm": {
+      "user": "demo-user-384",
+      "likes": 14,
+      "level": 3,
+      "punkte": 5
+     },
+     "aw": null,
+     "spielt": "stamm"
+    }
+   ]
+  },
+  {
+   "id": "1872",
+   "name": "Pixel Kickers",
+   "gruender": "demo-user-421",
+   "erstellt": "2026-10-08T16:00:00+0000",
+   "fans": 151,
+   "fans_anonym": 132,
+   "fans_benannt": [
+    "demo-user-432",
+    "demo-user-433",
+    "demo-user-434",
+    "demo-user-435",
+    "demo-user-436",
+    "demo-user-437",
+    "demo-user-438",
+    "demo-user-439",
+    "demo-user-440",
+    "demo-user-441",
+    "demo-user-442",
+    "demo-user-443",
+    "demo-user-444",
+    "demo-user-445",
+    "demo-user-446",
+    "demo-user-447",
+    "demo-user-448",
+    "demo-user-449",
+    "demo-user-450"
+   ],
+   "stufe": 2,
+   "stadion": "Sports Ground",
+   "kapazitaet": 250,
+   "stammelf": 10,
+   "komplett": false,
+   "staerke": 77,
+   "likes_total": 705,
+   "bonus": 2,
+   "behalten": 0,
+   "slots": [
+    {
+     "slot": "GK",
+     "pos": "GK",
+     "stamm": null,
+     "aw": null,
+     "spielt": null
+    },
+    {
+     "slot": "LB",
+     "pos": "LB",
+     "stamm": {
+      "user": "demo-user-421",
+      "likes": 14,
+      "level": 3,
+      "punkte": 5
+     },
+     "aw": {
+      "user": "demo-user-429",
+      "likes": 11,
+      "level": 3,
+      "punkte": 5
+     },
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CB1",
+     "pos": "CB",
+     "stamm": {
+      "user": "demo-user-427",
+      "likes": 7,
+      "level": 2,
+      "punkte": 4
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CB2",
+     "pos": "CB",
+     "stamm": {
+      "user": "demo-user-428",
+      "likes": 24,
+      "level": 4,
+      "punkte": 6
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "RB",
+     "pos": "RB",
+     "stamm": {
+      "user": "demo-user-431",
+      "likes": 20,
+      "level": 4,
+      "punkte": 6
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CM1",
+     "pos": "CM",
+     "stamm": {
+      "user": "demo-user-424",
+      "likes": 5,
+      "level": 2,
+      "punkte": 4
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CM2",
+     "pos": "CM",
+     "stamm": {
+      "user": "demo-user-426",
+      "likes": 75,
+      "level": 7,
+      "punkte": 9
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CM3",
+     "pos": "CM",
+     "stamm": {
+      "user": "demo-user-430",
+      "likes": 79,
+      "level": 7,
+      "punkte": 9
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "LW",
+     "pos": "LW",
+     "stamm": {
+      "user": "demo-user-423",
+      "likes": 345,
+      "level": 16,
+      "punkte": 18
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "ST",
+     "pos": "ST",
+     "stamm": {
+      "user": "demo-user-425",
+      "likes": 120,
+      "level": 9,
+      "punkte": 11
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "RW",
+     "pos": "RW",
+     "stamm": {
+      "user": "demo-user-422",
+      "likes": 16,
+      "level": 3,
+      "punkte": 5
+     },
+     "aw": null,
+     "spielt": "stamm"
+    }
+   ]
+  },
+  {
+   "id": "1943",
+   "name": "Foehn Storm",
+   "gruender": "demo-user-451",
+   "erstellt": "2026-10-09T22:00:00+0000",
+   "fans": 433,
+   "fans_anonym": 415,
+   "fans_benannt": [
+    "demo-user-462",
+    "demo-user-463",
+    "demo-user-464",
+    "demo-user-465",
+    "demo-user-466",
+    "demo-user-467",
+    "demo-user-468",
+    "demo-user-469",
+    "demo-user-470",
+    "demo-user-471",
+    "demo-user-472",
+    "demo-user-473",
+    "demo-user-474",
+    "demo-user-475",
+    "demo-user-476",
+    "demo-user-477",
+    "demo-user-478",
+    "demo-user-479"
+   ],
+   "stufe": 3,
+   "stadion": "Stadium",
+   "kapazitaet": 500,
+   "stammelf": 10,
+   "komplett": false,
+   "staerke": 113,
+   "likes_total": 1217,
+   "bonus": 3,
+   "behalten": 0,
+   "slots": [
+    {
+     "slot": "GK",
+     "pos": "GK",
+     "stamm": {
+      "user": "demo-user-457",
+      "likes": 7,
+      "level": 2,
+      "punkte": 5
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "LB",
+     "pos": "LB",
+     "stamm": {
+      "user": "demo-user-454",
+      "likes": 32,
+      "level": 5,
+      "punkte": 8
+     },
+     "aw": {
+      "user": "demo-user-461",
+      "likes": 83,
+      "level": 8,
+      "punkte": 11
+     },
+     "spielt": "aw"
+    },
+    {
+     "slot": "CB1",
+     "pos": "CB",
+     "stamm": {
+      "user": "demo-user-458",
+      "likes": 202,
+      "level": 12,
+      "punkte": 15
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CB2",
+     "pos": "CB",
+     "stamm": null,
+     "aw": null,
+     "spielt": null
+    },
+    {
+     "slot": "RB",
+     "pos": "RB",
+     "stamm": {
+      "user": "demo-user-451",
+      "likes": 32,
+      "level": 5,
+      "punkte": 8
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CM1",
+     "pos": "CM",
+     "stamm": {
+      "user": "demo-user-452",
+      "likes": 198,
+      "level": 12,
+      "punkte": 15
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CM2",
+     "pos": "CM",
+     "stamm": {
+      "user": "demo-user-453",
+      "likes": 411,
+      "level": 18,
+      "punkte": 21
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CM3",
+     "pos": "CM",
+     "stamm": {
+      "user": "demo-user-455",
+      "likes": 30,
+      "level": 5,
+      "punkte": 8
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "LW",
+     "pos": "LW",
+     "stamm": {
+      "user": "demo-user-460",
+      "likes": 26,
+      "level": 4,
+      "punkte": 7
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "ST",
+     "pos": "ST",
+     "stamm": {
+      "user": "demo-user-456",
+      "likes": 169,
+      "level": 11,
+      "punkte": 14
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "RW",
+     "pos": "RW",
+     "stamm": {
+      "user": "demo-user-459",
+      "likes": 59,
+      "level": 6,
+      "punkte": 9
+     },
+     "aw": null,
+     "spielt": "stamm"
+    }
+   ]
+  }
+ ],
+ "turnier": {
+  "staerken": {
+   "1078": 123,
+   "1110": 153,
+   "1144": 133,
+   "1392": 107,
+   "1480": 112,
+   "1552": 125,
+   "1628": 83,
+   "1709": 125,
+   "1792": 100
+  },
+  "gruppen": [
+   {
+    "name": "Group A",
+    "teams": [
+     "1792",
+     "1552",
+     "1144"
+    ],
+    "spiele": [
+     {
+      "heim": "1552",
+      "gast": "1144",
+      "tore": [
+       0,
+       1
+      ]
+     },
+     {
+      "heim": "1792",
+      "gast": "1144",
+      "tore": [
+       0,
+       2
+      ]
+     },
+     {
+      "heim": "1792",
+      "gast": "1552",
+      "tore": [
+       1,
+       2
+      ]
+     }
+    ],
+    "tabelle": [
+     {
+      "team": "1144",
+      "sp": 2,
+      "s": 2,
+      "u": 0,
+      "n": 0,
+      "tore": 3,
+      "gegen": 0,
+      "pkt": 6
+     },
+     {
+      "team": "1552",
+      "sp": 2,
+      "s": 1,
+      "u": 0,
+      "n": 1,
+      "tore": 2,
+      "gegen": 2,
+      "pkt": 3
+     },
+     {
+      "team": "1792",
+      "sp": 2,
+      "s": 0,
+      "u": 0,
+      "n": 2,
+      "tore": 1,
+      "gegen": 4,
+      "pkt": 0
+     }
+    ]
+   },
+   {
+    "name": "Group B",
+    "teams": [
+     "1628",
+     "1709",
+     "1078"
+    ],
+    "spiele": [
+     {
+      "heim": "1709",
+      "gast": "1078",
+      "tore": [
+       1,
+       0
+      ]
+     },
+     {
+      "heim": "1628",
+      "gast": "1078",
+      "tore": [
+       0,
+       2
+      ]
+     },
+     {
+      "heim": "1628",
+      "gast": "1709",
+      "tore": [
+       0,
+       2
+      ]
+     }
+    ],
+    "tabelle": [
+     {
+      "team": "1709",
+      "sp": 2,
+      "s": 2,
+      "u": 0,
+      "n": 0,
+      "tore": 3,
+      "gegen": 0,
+      "pkt": 6
+     },
+     {
+      "team": "1078",
+      "sp": 2,
+      "s": 1,
+      "u": 0,
+      "n": 1,
+      "tore": 2,
+      "gegen": 1,
+      "pkt": 3
+     },
+     {
+      "team": "1628",
+      "sp": 2,
+      "s": 0,
+      "u": 0,
+      "n": 2,
+      "tore": 0,
+      "gegen": 4,
+      "pkt": 0
+     }
+    ]
+   },
+   {
+    "name": "Group C",
+    "teams": [
+     "1110",
+     "1480",
+     "1392"
+    ],
+    "spiele": [
+     {
+      "heim": "1480",
+      "gast": "1392",
+      "tore": [
+       1,
+       0
+      ]
+     },
+     {
+      "heim": "1110",
+      "gast": "1392",
+      "tore": [
+       3,
+       0
+      ]
+     },
+     {
+      "heim": "1110",
+      "gast": "1480",
+      "tore": [
+       2,
+       0
+      ]
+     }
+    ],
+    "tabelle": [
+     {
+      "team": "1110",
+      "sp": 2,
+      "s": 2,
+      "u": 0,
+      "n": 0,
+      "tore": 5,
+      "gegen": 0,
+      "pkt": 6
+     },
+     {
+      "team": "1480",
+      "sp": 2,
+      "s": 1,
+      "u": 0,
+      "n": 1,
+      "tore": 1,
+      "gegen": 2,
+      "pkt": 3
+     },
+     {
+      "team": "1392",
+      "sp": 2,
+      "s": 0,
+      "u": 0,
+      "n": 2,
+      "tore": 0,
+      "gegen": 4,
+      "pkt": 0
+     }
+    ]
+   }
+  ],
+  "playoffs": [
+   {
+    "name": "Quarter-finals",
+    "spiele": [
+     {
+      "heim": "1110",
+      "gast": null,
+      "freilos": true,
+      "sieger": "1110"
+     },
+     {
+      "heim": "1078",
+      "gast": "1552",
+      "tore": [
+       0,
+       1
+      ],
+      "sieger": "1552",
+      "penalty": null
+     },
+     {
+      "heim": "1144",
+      "gast": null,
+      "freilos": true,
+      "sieger": "1144"
+     },
+     {
+      "heim": "1709",
+      "gast": "1480",
+      "tore": [
+       2,
+       1
+      ],
+      "sieger": "1709",
+      "penalty": null
+     }
+    ]
+   },
+   {
+    "name": "Semi-finals",
+    "spiele": [
+     {
+      "heim": "1110",
+      "gast": "1552",
+      "tore": [
+       2,
+       0
+      ],
+      "sieger": "1110",
+      "penalty": null
+     },
+     {
+      "heim": "1144",
+      "gast": "1709",
+      "tore": [
+       1,
+       0
+      ],
+      "sieger": "1144",
+      "penalty": null
+     }
+    ]
+   },
+   {
+    "name": "Final",
+    "spiele": [
+     {
+      "heim": "1110",
+      "gast": "1144",
+      "tore": [
+       2,
+       1
+      ],
+      "sieger": "1110",
+      "penalty": null
+     }
+    ]
+   }
+  ],
+  "platz3": {
+   "heim": "1552",
+   "gast": "1709",
+   "tore": [
+    1,
+    1
+   ],
+   "sieger": "1709",
+   "penalty": "1709"
+  },
+  "top3": [
+   "1110",
+   "1144",
+   "1709"
+  ],
+  "meister": "1110",
+  "berechnet": "2026-10-31T00:10:00+01:00"
+ },
+ "archiv": [
+  {
+   "nr": 1,
+   "ende": "2026-09-30T23:59:00+02:00",
+   "teams": 4,
+   "top3": [
+    "Kick Collective",
+    "Rhine Wave",
+    "Alpine Eagles"
+   ],
+   "meister": "Kick Collective"
+  }
+ ],
+ "demo": true
+}

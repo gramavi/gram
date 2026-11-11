@@ -1,0 +1,25 @@
+name: Renew Instagram token
+
+# The Instagram token expires after 60 days. This workflow renews it every
+# 20 days and stores the new token as the secret IG_TOKEN.
+# It needs an extra secret GH_PAT (personal access token with
+# "Secrets: Read and write" permission for this repository).
+
+on:
+  schedule:
+    - cron: "17 3 */20 * *"
+  workflow_dispatch: {}
+
+jobs:
+  erneuern:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Renew token
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          NEU=$(curl -sf "https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=${IG_TOKEN}" | python3 -c "import sys,json; print(json.load(sys.stdin)['access_token'])")
+          echo "::add-mask::$NEU"
+          gh secret set IG_TOKEN --body "$NEU" --repo "$GITHUB_REPOSITORY"
+          echo "Token renewed."

@@ -1,0 +1,36 @@
+name: Gramleagues Bot
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"   # every 15 minutes (GitHub may run a few minutes late)
+  workflow_dispatch: {}       # start by hand: Actions > Gramleagues Bot > Run workflow
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gramleagues-bot
+  cancel-in-progress: false
+
+jobs:
+  lauf:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run bot
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_USERNAME: ${{ vars.IG_USERNAME }}
+        run: python bot/run.py
+      - name: Save data
+        run: |
+          git config user.name "gramleagues-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/state.json docs/data/league.json
+          git diff --cached --quiet || git commit -m "League update $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push
