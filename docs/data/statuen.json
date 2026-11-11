@@ -1,8 +1,4 @@
 {
  "_info": "Monthly winners who get a statue. Put Instagram names (without @) in 'statuen'. All statues stand around the biggest stadium.",
- "statuen": [
-  "demo-user-054",
-  "demo-user-050",
-  "demo-user-999"
- ]
+ "statuen": []
 }
