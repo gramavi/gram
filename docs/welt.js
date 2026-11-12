@@ -1,8 +1,8 @@
 /* Gramleagues – 3D stadium world.
    Every team has a stadium that grows with its fans. Players stand on the pitch,
    named fans sit front and centre. Data: data/league.json (written by the bot). */
-import * as THREE from "three";
-import { OrbitControls } from "three/addons/OrbitControls.js";
+import * as THREE from "./vendor/three.module.js";
+import { OrbitControls } from "./vendor/OrbitControls.js";
 import * as UI from "./ui.js";
 
 const FX = 30, FZ = 19;               // halbe Feldlänge/-breite
@@ -31,10 +31,11 @@ const klickbar = [];
 
 /* ---------- Grundgerüst ---------- */
 let renderer;
-try { renderer = new THREE.WebGLRenderer({ antialias: true, powerPreference: "high-performance", logarithmicDepthBuffer: true }); }
+const SCHWACH = Math.min(innerWidth, innerHeight) <= 600 || (navigator.deviceMemory && navigator.deviceMemory <= 4);
+try { renderer = new THREE.WebGLRenderer({ antialias: !SCHWACH, powerPreference: "high-performance", logarithmicDepthBuffer: true }); }
 catch (e) { location.replace("liste.html"); throw e; }
 const GROSS = Math.min(innerWidth, innerHeight) > 600;   // Schatten nur auf grösseren Bildschirmen
-renderer.setPixelRatio(Math.min(window.devicePixelRatio, GROSS ? 2 : 1.75));
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, SCHWACH ? 1.5 : 2));
 renderer.setSize(innerWidth, innerHeight);
 renderer.outputColorSpace = THREE.SRGBColorSpace;
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
@@ -42,6 +43,7 @@ renderer.toneMappingExposure = 1.05;
 renderer.shadowMap.enabled = GROSS;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 document.body.prepend(renderer.domElement);
+renderer.domElement.addEventListener("webglcontextlost", (e) => { e.preventDefault(); window.gramFehler && window.gramFehler("The 3D view ran out of memory on this device."); });
 
 const HORIZONT = "#D3E4EF";
 const ASPHALT = "#45484E";
@@ -73,7 +75,7 @@ szene.add(new THREE.HemisphereLight("#EAF2FF", "#6E7562", 1.15));
 const sonne = new THREE.DirectionalLight("#FFF1DA", 2.4);
 sonne.position.set(-320, 420, 240);
 sonne.castShadow = GROSS;
-sonne.shadow.mapSize.set(4096, 4096);
+sonne.shadow.mapSize.set(SCHWACH ? 1024 : 4096, SCHWACH ? 1024 : 4096);
 sonne.shadow.bias = -0.0004;
 sonne.shadow.normalBias = 0.6;
 szene.add(sonne, sonne.target);
@@ -93,8 +95,11 @@ const mat = (() => {
     return cache.get(key);
   };
 })();
+const EINHEITS_BOX = new THREE.BoxGeometry(1, 1, 1);
+const EINHEITS_FLAECHE = new THREE.PlaneGeometry(1, 1);
 function box(w, h, d, farbe, x = 0, y = 0, z = 0, extra) {
-  const m = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), mat(farbe, extra));
+  const m = new THREE.Mesh(EINHEITS_BOX, mat(farbe, extra));
+  m.scale.set(w, h, d);
   m.position.set(x, y, z);
   m.castShadow = m.receiveShadow = true;
   return m;
@@ -103,17 +108,25 @@ function hash(s) { let h = 2166136261; for (const c of String(s)) h = Math.imul(
 function zufall(seed) { let a = seed >>> 0; return () => { a = (a + 0x6D2B79F5) >>> 0; let t = a; t = Math.imul(t ^ (t >>> 15), t | 1); t ^= t + Math.imul(t ^ (t >>> 7), t | 61); return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; }
 const dunkler = (hex, f) => "#" + new THREE.Color(hex).multiplyScalar(f).getHexString();
 
+function rundRechteck(g, x, y, w, h, r) {
+  if (g.roundRect) { g.roundRect(x, y, w, h, r); return; }
+  const [a, b, c, d] = Array.isArray(r) ? [r[0], r[1], r[2] ?? r[0], r[3] ?? r[1]] : [r, r, r, r];
+  g.moveTo(x + a, y); g.lineTo(x + w - b, y); g.quadraticCurveTo(x + w, y, x + w, y + b);
+  g.lineTo(x + w, y + h - c); g.quadraticCurveTo(x + w, y + h, x + w - c, y + h);
+  g.lineTo(x + d, y + h); g.quadraticCurveTo(x, y + h, x, y + h - d);
+  g.lineTo(x, y + a); g.quadraticCurveTo(x, y, x + a, y); g.closePath();
+}
 function schildTextur(zeilen, farbe) {
   const c = document.createElement("canvas");
   c.width = 1024; c.height = 256;
   const g = c.getContext("2d");
   g.fillStyle = "rgba(12,12,14,.62)";
-  g.beginPath(); g.roundRect(8, 8, 1008, 240, 18); g.fill();
+  g.beginPath(); rundRechteck(g, 8, 8, 1008, 240, 18); g.fill();
   const glanz = g.createLinearGradient(0, 8, 0, 130);
   glanz.addColorStop(0, "rgba(255,255,255,.22)"); glanz.addColorStop(1, "rgba(255,255,255,0)");
-  g.fillStyle = glanz; g.beginPath(); g.roundRect(8, 8, 1008, 122, [18, 18, 0, 0]); g.fill();
+  g.fillStyle = glanz; g.beginPath(); rundRechteck(g, 8, 8, 1008, 122, [18, 18, 0, 0]); g.fill();
   g.strokeStyle = "rgba(255,255,255,.55)"; g.lineWidth = 4;
-  g.beginPath(); g.roundRect(10, 10, 1004, 236, 16); g.stroke();
+  g.beginPath(); rundRechteck(g, 10, 10, 1004, 236, 16); g.stroke();
   g.fillStyle = "#fff"; g.textAlign = "center"; g.textBaseline = "middle";
   let groesse = 104;
   g.font = `800 ${groesse}px Inter, system-ui, sans-serif`;
@@ -406,7 +419,8 @@ function strassenTextur() {
 }
 
 function flaeche(w, d, farbe, x, y, z) {
-  const m = new THREE.Mesh(new THREE.PlaneGeometry(w, d), mat(farbe, { roughness: 1 }));
+  const m = new THREE.Mesh(EINHEITS_FLAECHE, mat(farbe, { roughness: 1 }));
+  m.scale.set(w, d, 1);
   m.rotation.x = -Math.PI / 2;
   m.position.set(x, y, z);
   m.receiveShadow = true;
@@ -423,12 +437,13 @@ function baueStadt(spalten, zeilen, stadionZellen) {
 
   // Strassennetz: Abschnitte zwischen den Kreuzungen, Kreuzungen als eigene Flächen mit Zebrastreifen
   const basis = strassenTextur();
+  const strassenMat = new THREE.MeshStandardMaterial({ map: basis, roughness: 1 });
   const streifen = [];   // [x, z, breite, tiefe] weisse Markierungen (Zebrastreifen, Parkfelder)
   const abschnitt = (laenge, quer, x, z) => {
-    const t = basis.clone();
-    t.needsUpdate = true;
-    t.repeat.set(Math.max(1, Math.round(laenge / 70)), 1);
-    const m = new THREE.Mesh(new THREE.PlaneGeometry(laenge, STRASSE), new THREE.MeshStandardMaterial({ map: t, roughness: 1 }));
+    const geo = new THREE.PlaneGeometry(laenge, STRASSE);
+    const uv = geo.attributes.uv, wdh = Math.max(1, Math.round(laenge / 70));
+    for (let i = 0; i < uv.count; i++) uv.setX(i, uv.getX(i) * wdh);
+    const m = new THREE.Mesh(geo, strassenMat);
     m.rotation.x = -Math.PI / 2;
     if (quer) m.rotation.z = Math.PI / 2;
     m.position.set(x, 0.04, z);
@@ -511,7 +526,8 @@ function baueStadt(spalten, zeilen, stadionZellen) {
     const [cx, cz] = mitteVon(c, r);
     const st = stadionZellen.get(`${c},${r}`);
     const sockelTeil = (w, d, x, z) => {
-      const m = new THREE.Mesh(new THREE.BoxGeometry(w, SOCKEL, d), sockelMat);
+      const m = new THREE.Mesh(EINHEITS_BOX, sockelMat);
+      m.scale.set(w, SOCKEL, d);
       m.position.set(x, SOCKEL / 2, z); m.receiveShadow = true; szene.add(m);
     };
     if (!st) sockelTeil(2 * bx, 2 * bz, cx, cz);
@@ -749,7 +765,7 @@ function baueTal(r0) {
     const huegel = fbm(x / 140 + 3, z / 140) * 18 * glatt(r0, r0 + 200, r);
     return berg * (160 + 760 * n * n) * grat + huegel - 0.4 * (1 - glatt(r0, r0 + 30, r));
   };
-  const SA = 260, SR = 70, R1 = r0 + 3400;
+  const SA = SCHWACH ? 140 : 260, SR = SCHWACH ? 40 : 70, R1 = r0 + 3400;
   const pos = [], farben = [], idx = [];
   const c = new THREE.Color();
   for (let i = 0; i <= SR; i++) {
@@ -782,7 +798,7 @@ function baueTal(r0) {
   // Wald an den Hängen
   const zuf = zufall(31);
   const baeume = [];
-  for (let k = 0; k < 2600 && baeume.length < 1400; k++) {
+  for (let k = 0; k < 2600 && baeume.length < (SCHWACH ? 500 : 1400); k++) {
     const a = zuf() * Math.PI * 2, r = r0 - 20 + zuf() * 900;
     const x = Math.cos(a) * r, z = Math.sin(a) * r;
     if (Math.abs(x) < stadtHalbX + 15 && Math.abs(z) < stadtHalbZ + 15) continue;
@@ -1172,12 +1188,12 @@ async function start_() {
   schleife();
   const params = new URLSearchParams(location.search);
   const ladeEnde = () => {
-    $("wolken").classList.add("auf");
+    if (window.gramWolkenAuf) window.gramWolkenAuf(); else $("wolken").classList.add("weg");
     fliege(p, z, 3.2);
-    setTimeout(() => $("wolken").classList.add("weg"), 3600);
     if (params.get("name")) { $("eingabe").value = params.get("name"); setTimeout(() => finde(params.get("name")), 3300); }
     else if (params.get("team") && stadien.has(params.get("team"))) setTimeout(() => oeffneTeam(params.get("team")), 3300);
   };
+  window.gramGestartet = true;
   requestAnimationFrame(() => requestAnimationFrame(() => setTimeout(ladeEnde, 350)));
 }
 

@@ -123,19 +123,13 @@ tr.weiter td:first-child { box-shadow: inset 3px 0 0 var(--gruen); }
 #mein { background: var(--gold); color: #1D1600; border-color: #FFF3C4; font-size: 15px; box-shadow: 0 0 18px 6px rgba(255, 210, 90, .8); }
 #demo { position: fixed; left: 12px; bottom: calc(150px + env(safe-area-inset-bottom)); z-index: 4; background: var(--gold); color: #2A2100; font-size: 12px; font-weight: 700; padding: 3px 9px; border-radius: 8px; }
 
-#wolken { position: fixed; inset: 0; z-index: 100; overflow: hidden; pointer-events: none; background: linear-gradient(180deg, #EEF2F7, #FFFFFF); transition: opacity 1.4s ease 1.2s; }
-#wolken::before { content: ""; position: absolute; inset: 0; background: rgba(255, 255, 255, .55); backdrop-filter: blur(30px); -webkit-backdrop-filter: blur(30px); transition: opacity .9s ease .2s; }
-#wolken.auf::before { opacity: 0; }
-#wolken i { position: absolute; display: block; border-radius: 50%; transform: translate(-50%, -50%);
-  background: radial-gradient(circle at 34% 28%, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, .92) 26%, rgba(246, 248, 252, .82) 55%, rgba(226, 232, 241, .74) 100%);
-  box-shadow: inset 0 18px 40px rgba(255, 255, 255, .95), inset 0 -26px 50px rgba(176, 190, 210, .32), inset 0 0 0 1px rgba(255, 255, 255, .7), 0 30px 70px rgba(30, 40, 60, .10);
-  transition: transform 2.8s cubic-bezier(.55, 0, .25, 1), opacity 2.4s ease; }
-#wolken .wolkentext { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; z-index: 1; color: #8E9096; font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif; font-size: clamp(34px, 6vw, 56px); font-weight: 800; letter-spacing: -.01em; transition: opacity .6s, transform .8s; }
-#wolken.auf .wolkentext { opacity: 0; transform: scale(1.06); }
-#wolken.auf { opacity: 0; }
-#wolken.auf i { transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) scale(1.8); opacity: 0; }
+#wolken { position: fixed; inset: 0; z-index: 100; overflow: hidden; pointer-events: none; }
+#wolken canvas { position: absolute; inset: 0; display: block; }
+#wolken .wolkentext { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; z-index: 1; padding: 20px; }
 #wolken.weg { display: none; }
-@media (prefers-reduced-motion: reduce) { #wolken i { transition: opacity 1s; } #wolken.auf i { transform: translate(-50%, -50%); } }
+@media (max-width: 640px), (pointer: coarse) {
+  .karte, #panel, #kamera button { backdrop-filter: blur(12px) saturate(160%); -webkit-backdrop-filter: blur(12px) saturate(160%); }
+}
 
 @media (max-width: 640px) {
   #kopf h1 { font-size: 18px; }
