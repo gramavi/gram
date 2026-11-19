@@ -1,12 +1,16 @@
 name: Gramleagues Bot
 
+# GitHub's 15-minute schedule is often late or skipped. So one run keeps
+# working for almost 6 hours (bot every 5 minutes) and then starts the next
+# run itself. The schedule below only restarts the chain if it ever stops.
 on:
   schedule:
-    - cron: "*/15 * * * *"   # every 15 minutes (GitHub may run several minutes late)
+    - cron: "7 * * * *"      # hourly safety restart
   workflow_dispatch: {}       # start by hand: Actions > Gramleagues Bot > Run workflow
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: gramleagues-bot
@@ -15,22 +19,33 @@ concurrency:
 jobs:
   lauf:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 355
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Run bot
+      - name: Run bot every 5 minutes
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_USERNAME: ${{ vars.IG_USERNAME }}
-        run: python bot/run.py
-      - name: Save data
         run: |
           git config user.name "gramleagues-bot"
           git config user.email "bot@users.noreply.github.com"
-          git add data/state.json docs/data/league.json
-          git diff --cached --quiet || git commit -m "League update $(date -u +%Y-%m-%dT%H:%MZ)"
-          git push
+          ende=$(( $(date +%s) + 340*60 ))
+          while [ "$(date +%s)" -lt "$ende" ]; do
+            git pull -q --rebase origin main || true
+            python bot/run.py || echo "Bot run failed, trying again in 5 minutes."
+            git add data/state.json docs/data/league.json
+            if ! git diff --cached --quiet; then
+              git commit -q -m "League update $(date -u +%Y-%m-%dT%H:%MZ)"
+              git pull -q --rebase origin main && git push -q || echo "Push failed, next round."
+            fi
+            sleep 300
+          done
+      - name: Start the next run
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X POST "repos/${{ github.repository }}/actions/workflows/bot.yml/dispatches" -f ref=main
