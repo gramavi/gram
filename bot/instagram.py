@@ -1,7 +1,11 @@
-"""Kleiner Client für die Instagram API (Instagram Login, graph.instagram.com).
+"""Kleiner Client für die Instagram API.
 
-Benötigt ein Instagram-Profi-Konto und einen Token mit
-instagram_business_basic + instagram_business_manage_comments.
+Zwei Token-Arten werden unterstützt:
+- Instagram Login (Token beginnt mit "IG", graph.instagram.com)
+- Unified Login / Systemnutzer-Token (Token beginnt mit "EAA", graph.facebook.com),
+  Standard für neue Meta-Apps seit Ende Oktober 2026, läuft nicht ab.
+Benötigt Leserechte und Kommentar-Rechte (instagram_basic + instagram_manage_comments
+bzw. instagram_business_basic + instagram_business_manage_comments).
 Nur Python-Standardbibliothek.
 """
 import json
@@ -9,7 +13,13 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-BASE = "https://graph.instagram.com/v23.0"
+BASE_IG = "https://graph.instagram.com/v23.0"
+BASE_FB = "https://graph.facebook.com/v23.0"
+
+
+def basis_fuer(token):
+    """Instagram-Login-Tokens beginnen mit "IG", alle anderen laufen über graph.facebook.com."""
+    return BASE_IG if (token or "").startswith("IG") else BASE_FB
 FELDER = "id,text,timestamp,username,like_count"
 
 
@@ -21,10 +31,10 @@ class ApiFehler(Exception):
 
 
 class InstagramAPI:
-    def __init__(self, token, user_id, base=BASE):
+    def __init__(self, token, user_id, base=None):
         self.token = token
         self.user_id = user_id
-        self.base = base
+        self.base = base or basis_fuer(token)
 
     def _req(self, methode, pfad, params=None):
         params = dict(params or {})
@@ -63,6 +73,9 @@ class InstagramAPI:
         return daten
 
     # Lesen
+    def konto(self):
+        return self._req("GET", self.user_id, {"fields": "id,username"})
+
     def medien(self):
         return self._req("GET", f"{self.user_id}/media", {"fields": "id,caption,timestamp,permalink", "limit": 25}).get("data", [])
 

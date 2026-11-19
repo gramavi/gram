@@ -188,6 +188,8 @@ def main():
         print("IG_TOKEN and IG_USER_ID are missing (GitHub secrets).", file=sys.stderr)
         sys.exit(1)
     api = InstagramAPI(token, user_id)
+    konto = api.konto()
+    print("Connected to Instagram account:", konto.get("username"), "via", api.base.split("/")[2])
     state = laden()
     now = datetime.now(timezone.utc)
     lauf(api, state, now, eigener_name)
