@@ -1,8 +1,9 @@
 {
- "stand": "2026-11-19T13:33:46.672094+01:00",
- "status": "warten",
- "saison": null,
- "naechste_saison": {
+ "stand": "2026-11-19T13:58:34.389367+01:00",
+ "status": "anmeldung",
+ "saison": {
+  "nr": 1,
+  "permalink": "https://www.instagram.com/reel/Df7GnDBN72f/",
   "start": "2026-11-01T00:00:00+01:00",
   "anmeldeschluss": "2026-11-29T23:59:00+01:00",
   "ende": "2026-11-30T23:59:00+01:00",
@@ -12,6 +13,7 @@
    "final": "2026-11-30T20:00:00+01:00"
   }
  },
+ "naechste_saison": null,
  "stadien": [
   {
    "stufe": 1,
@@ -126,7 +128,202 @@
   }
  ],
  "bonus_pro_stufe": 1,
- "teams": [],
+ "teams": [
+  {
+   "id": "18109373765346771",
+   "name": "FC Bolzhausen",
+   "gruender": "fcbolzhausen",
+   "erstellt": "2026-11-19T12:49:42+0000",
+   "fans": 0,
+   "fans_anonym": 0,
+   "fans_benannt": [],
+   "stufe": 1,
+   "stadion": "Backyard Pitch",
+   "kapazitaet": 100,
+   "stammelf": 0,
+   "komplett": false,
+   "staerke": 0,
+   "likes_total": 0,
+   "bonus": 1,
+   "behalten": 0,
+   "slots": [
+    {
+     "slot": "GK",
+     "pos": "GK",
+     "stamm": null,
+     "aw": null,
+     "spielt": null
+    },
+    {
+     "slot": "LB",
+     "pos": "LB",
+     "stamm": null,
+     "aw": null,
+     "spielt": null
+    },
+    {
+     "slot": "CB1",
+     "pos": "CB",
+     "stamm": null,
+     "aw": null,
+     "spielt": null
+    },
+    {
+     "slot": "CB2",
+     "pos": "CB",
+     "stamm": null,
+     "aw": null,
+     "spielt": null
+    },
+    {
+     "slot": "RB",
+     "pos": "RB",
+     "stamm": null,
+     "aw": null,
+     "spielt": null
+    },
+    {
+     "slot": "CM1",
+     "pos": "CM",
+     "stamm": null,
+     "aw": null,
+     "spielt": null
+    },
+    {
+     "slot": "CM2",
+     "pos": "CM",
+     "stamm": null,
+     "aw": null,
+     "spielt": null
+    },
+    {
+     "slot": "CM3",
+     "pos": "CM",
+     "stamm": null,
+     "aw": null,
+     "spielt": null
+    },
+    {
+     "slot": "LW",
+     "pos": "LW",
+     "stamm": null,
+     "aw": null,
+     "spielt": null
+    },
+    {
+     "slot": "ST",
+     "pos": "ST",
+     "stamm": null,
+     "aw": null,
+     "spielt": null
+    },
+    {
+     "slot": "RW",
+     "pos": "RW",
+     "stamm": null,
+     "aw": null,
+     "spielt": null
+    }
+   ]
+  },
+  {
+   "id": "18417632683087137",
+   "name": "avenura fc",
+   "gruender": "avenurafc",
+   "erstellt": "2026-11-19T12:57:52+0000",
+   "fans": 0,
+   "fans_anonym": 0,
+   "fans_benannt": [],
+   "stufe": 1,
+   "stadion": "Backyard Pitch",
+   "kapazitaet": 100,
+   "stammelf": 0,
+   "komplett": false,
+   "staerke": 0,
+   "likes_total": 0,
+   "bonus": 1,
+   "behalten": 0,
+   "slots": [
+    {
+     "slot": "GK",
+     "pos": "GK",
+     "stamm": null,
+     "aw": null,
+     "spielt": null
+    },
+    {
+     "slot": "LB",
+     "pos": "LB",
+     "stamm": null,
+     "aw": null,
+     "spielt": null
+    },
+    {
+     "slot": "CB1",
+     "pos": "CB",
+     "stamm": null,
+     "aw": null,
+     "spielt": null
+    },
+    {
+     "slot": "CB2",
+     "pos": "CB",
+     "stamm": null,
+     "aw": null,
+     "spielt": null
+    },
+    {
+     "slot": "RB",
+     "pos": "RB",
+     "stamm": null,
+     "aw": null,
+     "spielt": null
+    },
+    {
+     "slot": "CM1",
+     "pos": "CM",
+     "stamm": null,
+     "aw": null,
+     "spielt": null
+    },
+    {
+     "slot": "CM2",
+     "pos": "CM",
+     "stamm": null,
+     "aw": null,
+     "spielt": null
+    },
+    {
+     "slot": "CM3",
+     "pos": "CM",
+     "stamm": null,
+     "aw": null,
+     "spielt": null
+    },
+    {
+     "slot": "LW",
+     "pos": "LW",
+     "stamm": null,
+     "aw": null,
+     "spielt": null
+    },
+    {
+     "slot": "ST",
+     "pos": "ST",
+     "stamm": null,
+     "aw": null,
+     "spielt": null
+    },
+    {
+     "slot": "RW",
+     "pos": "RW",
+     "stamm": null,
+     "aw": null,
+     "spielt": null
+    }
+   ]
+  }
+ ],
  "turnier": null,
  "archiv": []
 }

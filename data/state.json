@@ -1,9 +1,141 @@
 {
  "version": 1,
- "saison": null,
- "teams": {},
+ "saison": {
+  "nr": 1,
+  "media_id": "18125185873897799",
+  "permalink": "https://www.instagram.com/reel/Df7GnDBN72f/",
+  "start": "2026-11-01T00:00:00+01:00",
+  "anmeldeschluss": "2026-11-29T23:59:00+01:00",
+  "ende": "2026-11-30T23:59:00+01:00",
+  "reveal": {
+   "gruppen": "2026-11-30T14:00:00+01:00",
+   "playoffs": "2026-11-30T18:00:00+01:00",
+   "final": "2026-11-30T20:00:00+01:00"
+  }
+ },
+ "teams": {
+  "18109373765346771": {
+   "id": "18109373765346771",
+   "name": "FC Bolzhausen",
+   "gruender": "fcbolzhausen",
+   "erstellt": "2026-11-19T12:49:42+0000",
+   "media_id": "18125185873897799",
+   "likes": 0,
+   "fans_benannt": [],
+   "slots": {
+    "GK": {
+     "stamm": null,
+     "aw": null
+    },
+    "LB": {
+     "stamm": null,
+     "aw": null
+    },
+    "CB1": {
+     "stamm": null,
+     "aw": null
+    },
+    "CB2": {
+     "stamm": null,
+     "aw": null
+    },
+    "RB": {
+     "stamm": null,
+     "aw": null
+    },
+    "CM1": {
+     "stamm": null,
+     "aw": null
+    },
+    "CM2": {
+     "stamm": null,
+     "aw": null
+    },
+    "CM3": {
+     "stamm": null,
+     "aw": null
+    },
+    "LW": {
+     "stamm": null,
+     "aw": null
+    },
+    "ST": {
+     "stamm": null,
+     "aw": null
+    },
+    "RW": {
+     "stamm": null,
+     "aw": null
+    }
+   },
+   "max_stufe": 1,
+   "behalten": 0,
+   "aufgeloest": false
+  },
+  "18417632683087137": {
+   "id": "18417632683087137",
+   "name": "avenura fc",
+   "gruender": "avenurafc",
+   "erstellt": "2026-11-19T12:57:52+0000",
+   "media_id": "18125185873897799",
+   "likes": 0,
+   "fans_benannt": [],
+   "slots": {
+    "GK": {
+     "stamm": null,
+     "aw": null
+    },
+    "LB": {
+     "stamm": null,
+     "aw": null
+    },
+    "CB1": {
+     "stamm": null,
+     "aw": null
+    },
+    "CB2": {
+     "stamm": null,
+     "aw": null
+    },
+    "RB": {
+     "stamm": null,
+     "aw": null
+    },
+    "CM1": {
+     "stamm": null,
+     "aw": null
+    },
+    "CM2": {
+     "stamm": null,
+     "aw": null
+    },
+    "CM3": {
+     "stamm": null,
+     "aw": null
+    },
+    "LW": {
+     "stamm": null,
+     "aw": null
+    },
+    "ST": {
+     "stamm": null,
+     "aw": null
+    },
+    "RW": {
+     "stamm": null,
+     "aw": null
+    }
+   },
+   "max_stufe": 1,
+   "behalten": 0,
+   "aufgeloest": false
+  }
+ },
  "verarbeitet": {},
- "team_kommentare": {},
+ "team_kommentare": {
+  "18109373765346771": "team",
+  "18417632683087137": "team"
+ },
  "turnier": null,
  "shoutout": false,
  "archiv": [],
