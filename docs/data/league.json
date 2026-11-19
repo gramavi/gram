@@ -1,5 +1,5 @@
 {
- "stand": "2026-11-19T13:58:34.389367+01:00",
+ "stand": "2026-11-19T14:16:29.304658+01:00",
  "status": "anmeldung",
  "saison": {
   "nr": 1,
@@ -237,9 +237,9 @@
    "stufe": 1,
    "stadion": "Backyard Pitch",
    "kapazitaet": 100,
-   "stammelf": 0,
+   "stammelf": 1,
    "komplett": false,
-   "staerke": 0,
+   "staerke": 1,
    "likes_total": 0,
    "bonus": 1,
    "behalten": 0,
@@ -310,9 +310,14 @@
     {
      "slot": "ST",
      "pos": "ST",
-     "stamm": null,
+     "stamm": {
+      "user": "avenurafc",
+      "likes": 0,
+      "level": 0,
+      "punkte": 1
+     },
      "aw": null,
-     "spielt": null
+     "spielt": "stamm"
     },
     {
      "slot": "RW",

@@ -118,7 +118,12 @@
      "aw": null
     },
     "ST": {
-     "stamm": null,
+     "stamm": {
+      "user": "avenurafc",
+      "reply_id": "18128224532315543",
+      "ts": "2026-11-19T13:00:32+0000",
+      "likes": 0
+     },
      "aw": null
     },
     "RW": {
@@ -131,7 +136,9 @@
    "aufgeloest": false
   }
  },
- "verarbeitet": {},
+ "verarbeitet": {
+  "18128224532315543": "stamm"
+ },
  "team_kommentare": {
   "18109373765346771": "team",
   "18417632683087137": "team"
