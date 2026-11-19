@@ -134,14 +134,79 @@
    "max_stufe": 1,
    "behalten": 0,
    "aufgeloest": false
+  },
+  "18101188388098502": {
+   "id": "18101188388098502",
+   "name": "jaeb",
+   "gruender": "jaebjaebjaebjaeb",
+   "erstellt": "2026-11-19T13:28:03+0000",
+   "media_id": "18125185873897799",
+   "likes": 0,
+   "fans_benannt": [],
+   "slots": {
+    "GK": {
+     "stamm": null,
+     "aw": null
+    },
+    "LB": {
+     "stamm": null,
+     "aw": null
+    },
+    "CB1": {
+     "stamm": null,
+     "aw": null
+    },
+    "CB2": {
+     "stamm": null,
+     "aw": null
+    },
+    "RB": {
+     "stamm": null,
+     "aw": null
+    },
+    "CM1": {
+     "stamm": {
+      "user": "jaebjaebjaebjaeb",
+      "reply_id": "17910983250593533",
+      "ts": "2026-11-19T13:28:15+0000",
+      "likes": 0
+     },
+     "aw": null
+    },
+    "CM2": {
+     "stamm": null,
+     "aw": null
+    },
+    "CM3": {
+     "stamm": null,
+     "aw": null
+    },
+    "LW": {
+     "stamm": null,
+     "aw": null
+    },
+    "ST": {
+     "stamm": null,
+     "aw": null
+    },
+    "RW": {
+     "stamm": null,
+     "aw": null
+    }
+   },
+   "max_stufe": 1,
+   "behalten": 0,
+   "aufgeloest": false
   }
  },
  "verarbeitet": {
-  "18128224532315543": "stamm"
+  "18128224532315543": "stamm",
+  "17910983250593533": "stamm"
  },
  "team_kommentare": {
   "18109373765346771": "team",
-  "18417632683087137": "team"
+  "18417632683087137": "team",
+  "18101188388098502": "team"
  },
  "turnier": null,
  "shoutout": false,

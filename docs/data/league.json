@@ -1,5 +1,5 @@
 {
- "stand": "2026-11-19T14:26:44.823881+01:00",
+ "stand": "2026-11-19T14:31:53.148257+01:00",
  "status": "anmeldung",
  "saison": {
   "nr": 1,
@@ -318,6 +318,108 @@
      },
      "aw": null,
      "spielt": "stamm"
+    },
+    {
+     "slot": "RW",
+     "pos": "RW",
+     "stamm": null,
+     "aw": null,
+     "spielt": null
+    }
+   ]
+  },
+  {
+   "id": "18101188388098502",
+   "name": "jaeb",
+   "gruender": "jaebjaebjaebjaeb",
+   "erstellt": "2026-11-19T13:28:03+0000",
+   "fans": 0,
+   "fans_anonym": 0,
+   "fans_benannt": [],
+   "stufe": 1,
+   "stadion": "Backyard Pitch",
+   "kapazitaet": 100,
+   "stammelf": 1,
+   "komplett": false,
+   "staerke": 1,
+   "likes_total": 0,
+   "bonus": 1,
+   "behalten": 0,
+   "slots": [
+    {
+     "slot": "GK",
+     "pos": "GK",
+     "stamm": null,
+     "aw": null,
+     "spielt": null
+    },
+    {
+     "slot": "LB",
+     "pos": "LB",
+     "stamm": null,
+     "aw": null,
+     "spielt": null
+    },
+    {
+     "slot": "CB1",
+     "pos": "CB",
+     "stamm": null,
+     "aw": null,
+     "spielt": null
+    },
+    {
+     "slot": "CB2",
+     "pos": "CB",
+     "stamm": null,
+     "aw": null,
+     "spielt": null
+    },
+    {
+     "slot": "RB",
+     "pos": "RB",
+     "stamm": null,
+     "aw": null,
+     "spielt": null
+    },
+    {
+     "slot": "CM1",
+     "pos": "CM",
+     "stamm": {
+      "user": "jaebjaebjaebjaeb",
+      "likes": 0,
+      "level": 0,
+      "punkte": 1
+     },
+     "aw": null,
+     "spielt": "stamm"
+    },
+    {
+     "slot": "CM2",
+     "pos": "CM",
+     "stamm": null,
+     "aw": null,
+     "spielt": null
+    },
+    {
+     "slot": "CM3",
+     "pos": "CM",
+     "stamm": null,
+     "aw": null,
+     "spielt": null
+    },
+    {
+     "slot": "LW",
+     "pos": "LW",
+     "stamm": null,
+     "aw": null,
+     "spielt": null
+    },
+    {
+     "slot": "ST",
+     "pos": "ST",
+     "stamm": null,
+     "aw": null,
+     "spielt": null
     },
     {
      "slot": "RW",
